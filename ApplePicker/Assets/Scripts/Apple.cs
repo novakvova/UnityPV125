@@ -12,6 +12,8 @@ public class Apple : MonoBehaviour
         if(transform.position.y < bottomY)
         {
             Destroy(gameObject);
+            ApplePicker apScript = Camera.main.GetComponent<ApplePicker>();
+            apScript.AppleDesctroyed();
         }
         
     }
